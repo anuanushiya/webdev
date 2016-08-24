@@ -38,7 +38,7 @@ app.use(passport.initialize());
 
 app.use(passport.session());
 
-var ipaddress = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+var ipaddress = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 var port = process.env.OPENSHIFT_NODEJS_PORT || 3000;
 
 // FOR project and other strategies to workout
